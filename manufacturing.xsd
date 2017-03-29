@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="manufacturing">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="produk"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="produk">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="kode" minOccurs="1"/>
+                <xs:element ref="rasa"/>
+                <xs:element ref="satuan"/>
+                <xs:element ref="jumlah"/>
+                <xs:element ref="harga"/>
+                <xs:element ref="tglkadaluwarsa"/>
+                <xs:element ref="perusahaan"/>
+            </xs:sequence>
+            <xs:attribute name="Nama" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="kode" type="xs:NCName"/>
+    <xs:element name="rasa" type="xs:string"/>
+    <xs:element name="satuan" type="xs:NCName"/>
+    <xs:element name="jumlah" type="xs:integer"/>
+    <xs:element name="harga">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="per" use="required" type="xs:NCName"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="tglkadaluwarsa" type="xs:string"/>
+    <xs:element name="perusahaan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alamat"/>
+                <xs:element ref="kodewil"/>
+                <xs:element ref="email" minOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="Nama" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="alamat" type="xs:string"/>
+    <xs:element name="kodewil" type="xs:integer"/>
+    <xs:element name="email">
+    	<xs:simpleType>
+    		<xs:restriction base="xs:string">
+    			<xs:pattern
+    				value="[_\-a-zA-Z0-9\.\+]+@[a-zA-Z0-9](\.?[\-a-zA-Z0-9]*[a-zA-Z0-9])*">
+    			</xs:pattern>
+    		</xs:restriction>
+    	</xs:simpleType>
+    </xs:element>
+</xs:schema>

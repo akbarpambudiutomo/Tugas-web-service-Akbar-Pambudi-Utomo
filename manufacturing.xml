@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manufacturing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="manufacturing.xsd">
+<produk Nama="Indomie">
+	<kode>A112</kode>
+	<rasa>Ayam Bawang</rasa>
+	<satuan>Dus</satuan>
+	<jumlah>200</jumlah>
+	<harga per="satuan">40000</harga>
+	<tglkadaluwarsa>18 Agustus 2018</tglkadaluwarsa>
+	<perusahaan Nama="PT.Indofood">
+		<alamat>jl. Soekarno-Hatta no.20 Bandung</alamat>
+		<kodewil>303</kodewil>
+		<email>indofood@asd.com</email>
+	</perusahaan>
+</produk>
+
+<produk Nama="Teh Botol">
+	<kode>Z332</kode>
+	<rasa>Green Tea</rasa>
+	<satuan>Dus</satuan>
+	<jumlah>100</jumlah>
+	<harga per="satuan">35000</harga>
+	<tglkadaluwarsa>23 Februari 2019</tglkadaluwarsa>
+	<perusahaan Nama="PT.Teh Botol">
+		<alamat>jl. Jayapati no.25 Jakarta</alamat>
+		<kodewil>435</kodewil>
+		<email>cs@tehbotol.com</email>
+	</perusahaan>
+</produk>
+
+<produk Nama="Chitatos">
+	<kode>B224</kode>
+	<rasa>Ayam Panggang</rasa>
+	<satuan>Dus</satuan>
+	<jumlah>100</jumlah>
+	<harga per="satuan">50000</harga>
+	<tglkadaluwarsa>12 Januari 2018</tglkadaluwarsa>
+	<perusahaan Nama="PT. Jaya Sentosa">
+		<alamat>jl. Pramuka no.16 Jakarta</alamat>
+		<kodewil>435</kodewil>
+		<email>cs@jayasentosa.com</email>
+	</perusahaan>
+</produk>
+
+<produk Nama="Susu Ultra Milk">
+	<kode>B254</kode>
+	<rasa>Coklat</rasa>
+	<satuan>Dus</satuan>
+	<jumlah>100</jumlah>
+	<harga per="satuan">45000</harga>
+	<tglkadaluwarsa>28 April 2019</tglkadaluwarsa>
+	<perusahaan Nama="PT. Ultra Jaya Milk">
+		<alamat>jl. Adam Malik no.18 Padalarang</alamat>
+		<kodewil>308</kodewil>
+		<email>cs@ultramilk.id</email>
+	</perusahaan>
+</produk>
+
+<produk Nama="Chitatos">
+	<kode>B224</kode>
+	<rasa>Ayam Panggang</rasa>
+	<satuan>Dus</satuan>
+	<jumlah>100</jumlah>
+	<harga per="satuan">50000</harga>
+	<tglkadaluwarsa>12 Januari 2018</tglkadaluwarsa>
+	<perusahaan Nama="PT. Jaya Sentosa">
+		<alamat>jl. Pramuka no.16</alamat>
+		<kodewil>202</kodewil>
+		<email>cs@sentosa.com</email>
+	</perusahaan>
+</produk>
+</manufacturing>
